@@ -19,7 +19,7 @@ public class Findout_Maximum_PRiceAnd_Add_to_Cart
 		
 		login(driver);
 		
-//		driver.quit();
+		driver.quit();
 	}
 
 	private static void login(WebDriver driver) 
@@ -33,7 +33,7 @@ public class Findout_Maximum_PRiceAnd_Add_to_Cart
 		driver.findElement(By.id("login-button")).click();
 		
 		Find_maximum_product_price_java8(driver);
-		//Findout_Minimum_Product_And_Add_To_Cart_Product(driver);
+		Findout_Minimum_Product_And_Add_To_Cart_Product(driver);
 		Findout_Maximum_Product_And_Add_To_Cart_Product(driver);
 		
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
