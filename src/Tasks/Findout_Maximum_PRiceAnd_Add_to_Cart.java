@@ -32,7 +32,7 @@ public class Findout_Maximum_PRiceAnd_Add_to_Cart
 		
 		driver.findElement(By.id("login-button")).click();
 		
-		//Find_maximum_product_price_java8(driver);
+		Find_maximum_product_price_java8(driver);
 		//Findout_Minimum_Product_And_Add_To_Cart_Product(driver);
 		Findout_Maximum_Product_And_Add_To_Cart_Product(driver);
 		
