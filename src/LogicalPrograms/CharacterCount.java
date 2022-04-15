@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class CharacterCount
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         String str="Onkar Balasaheb Nimbalkar";
         char[] ch=str.toCharArray();
         Map<Character,Integer> CharCount=new HashMap<>();
@@ -17,5 +18,4 @@ public class CharacterCount
         }
         System.out.println(CharCount);
     }
-
 }
