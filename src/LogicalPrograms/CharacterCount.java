@@ -9,12 +9,11 @@ public class CharacterCount
         String str="Onkar Balasaheb Nimbalkar";
         char[] ch=str.toCharArray();
         Map<Character,Integer> CharCount=new HashMap<>();
-        for(int i=0;i<ch.length;i++)
-        {
-            if (CharCount.containsKey(ch[i]))
-                CharCount.put(ch[i],CharCount.get(ch[i])+1);
+        for (char c : ch) {
+            if (CharCount.containsKey(c))
+                CharCount.put(c, CharCount.get(c) + 1);
             else
-                CharCount.put(ch[i],1);
+                CharCount.put(c, 1);
         }
         System.out.println(CharCount);
     }
