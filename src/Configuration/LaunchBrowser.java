@@ -2,6 +2,7 @@ package Configuration;
 
 import java.time.Duration;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,7 +11,8 @@ public class LaunchBrowser
 {
 	public static WebDriver ChromeBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:/Software/Java Softwares/Testing/Browsers Driver/Chrome/Chrome 100/chromedriver.exe"); // To Set Property
+		System.setProperty("webdriver.chrome.driver", "D:/Software/Java Softwares/Testing/Browsers Driver/Chrome/Chrome 103/chromedriver.exe"); // To Set Property
+		//WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver(); //launch the browser
 		maximize(driver);
 		timeout(driver);

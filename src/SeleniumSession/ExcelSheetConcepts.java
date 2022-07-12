@@ -11,7 +11,7 @@ public class ExcelSheetConcepts
 {
 	public static void main(String[] args) throws IOException 
 	{
-			FileInputStream excel=new  FileInputStream("D:\\Study Data\\Velocity Class\\Topics For Mock.xlsx");
+			FileInputStream excel=new FileInputStream("D:/Study Data/Velocity Class/Topics For Mock.xlsx");
 			XSSFWorkbook fs= new XSSFWorkbook(excel);
 			XSSFSheet sheet=fs.getSheetAt(1);
 			int rowValue =sheet.getLastRowNum();

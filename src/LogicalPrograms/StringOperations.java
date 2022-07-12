@@ -87,7 +87,6 @@ public class StringOperations
             String first=s[i].substring(0,1).toUpperCase(Locale.ROOT);
             String second=s[i].substring(1);
             System.out.print(first.concat(second)+" ");
-
         }
         throw new ArithmeticException();
     }

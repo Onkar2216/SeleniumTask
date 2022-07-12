@@ -17,6 +17,7 @@ public class DynamicTableHandleConcept
 	{
 			WebDriver driver= LaunchBrowser.ChromeBrowser();
 			driver.get("http://www.freecrm.com");
+			driver.close();
 			Actions action=new Actions(driver);
 			Login(driver,action);
 			WebElement contact=driver.findElement(By.xpath("//a//span[contains(text(),'Contacts')]"));
@@ -25,6 +26,7 @@ public class DynamicTableHandleConcept
 			
 			String name="Saurabh Sudhir Randhive";
 			ClickOnContact(driver,name,action);
+
 		}
 	private static void ClickOnContact(WebDriver driver, String name, Actions action) 
 	{

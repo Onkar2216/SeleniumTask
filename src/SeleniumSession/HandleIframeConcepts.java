@@ -5,6 +5,7 @@ import Configuration.configuration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class HandleIframeConcepts
 {
@@ -17,5 +18,6 @@ public class HandleIframeConcepts
         WebElement element1=driver.findElement(By.xpath(configuration.iframe1));
         driver.switchTo().frame(element1);
         driver.findElement(By.xpath(configuration.menu)).click();
+        Select s=new Select(element);
     }
 }

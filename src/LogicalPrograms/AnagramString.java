@@ -14,7 +14,7 @@ public class AnagramString {
 		if(Arrays.equals(c1, c2))
 			System.out.println("String "+str1+" is Anagram");
 		else
-			System.out.println("String "+str1+" is Anagram");
+			System.out.println("String "+str1+" is Not Anagram");
 	}
 	
 	public static void main(String[] args) 

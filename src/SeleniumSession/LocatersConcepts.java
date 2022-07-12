@@ -29,11 +29,12 @@ public class LocatersConcepts
 		driver.findElement(By.name("lastname")).sendKeys("Nimbalkar");
 		
 		// 4 css Locater
-		driver.findElement(By.xpath("//*[@name=\"reg_email__\"]")).sendKeys("onkarnimbalkar97@gmail.com");
-		driver.findElement(By.xpath("//*[@name=\"reg_email_confirmation__\"]")).sendKeys("onkarnimbalkar97@gmail.com");
+//		driver.findElement(By.xpath("//*[@name='reg_email__']")).sendKeys("onkarnimbalkar97@gmail.com");
+//		driver.findElement(By.xpath("//*[@name='reg_email_confirmation__']")).sendKeys("onkarnimbalkar97@gmail.com");
+		//driver.findElement(By.cssSelector("#u_2_g_Qt")).sendKeys("onkarnimbalkar97@gmail.com");
 
 		// 5 xpath 
-		driver.findElement(By.xpath("//*[@id=\"password_step_input\"]")).sendKeys("onkar1995");
+		driver.findElement(By.xpath("//*[@id='password_step_input']")).sendKeys("onkar1995");
 		
 		// 6 partial Linktext -- Not Useful
 		//	driver.findElement(By.partialLinkText("Create a free")).click();
@@ -49,7 +50,7 @@ public class LocatersConcepts
 		select2.selectByVisibleText("1995");
 		
 		// 7 Class name -- Not Useful
-		driver.findElement(By.xpath("//input[@value=\"2\"]")).click();
+		driver.findElement(By.xpath("//input[@value='2']")).click();
 		
 	}
 	

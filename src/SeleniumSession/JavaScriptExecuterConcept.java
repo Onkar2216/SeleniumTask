@@ -87,6 +87,12 @@ public class JavaScriptExecuterConcept
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Onkar@1995");
 		driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']")).click();
 	}
+
+	private static void scrollIntoView(WebDriver driver, WebElement nextButton)
+	{
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", nextButton);
+	}
 	
 	
 
